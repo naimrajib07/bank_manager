@@ -1,6 +1,6 @@
 == README
 
-== Create User From Concole
+== Create User From Console
 
 user1 = User.create!(email: 'naim.cse07@gmail.com', password: '12345678', password_confirmation: '12345678')
 
@@ -25,6 +25,8 @@ userAcc1.balance_transfer(userAcc2.id, 5)
 == To See The Last Transaction Details
 userAcc1 = BankAccount.find(1)
 userAcc1.last_transaction_details
+
+---------------------------------------------------------------------------
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
