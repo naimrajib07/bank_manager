@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  amount: 1.5
+  type: 
+  ref_transaction_id: 1
+  bank_account_id: 
+
+two:
+  amount: 1.5
+  type: 
+  ref_transaction_id: 1
+  bank_account_id: 
