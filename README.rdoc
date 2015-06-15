@@ -1,5 +1,31 @@
 == README
 
+== Create User From Concole
+
+user1 = User.create!(email: 'naim.cse07@gmail.com', password: '12345678', password_confirmation: '12345678')
+
+== Create Bank Account
+user1 = User.find_by_email('naim.cse07@gmail.com')
+user1.build_bank_account
+user1.save!
+
+== Give User Credit To The Account
+userAcc1 = BankAccount.find(1)
+userAcc1.deposit(20)
+
+== Withdraw From Bank Account
+userAcc1 = BankAccount.find(1)
+userAcc1.withdraw(10)
+
+== Balance Transfer
+userAcc1 = BankAccount.find(1)
+userAcc2 = BankAccount.find(2)
+userAcc1.balance_transfer(userAcc2.id, 5)
+
+== To See The Last Transaction Details
+userAcc1 = BankAccount.find(1)
+userAcc1.last_transaction_details
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
